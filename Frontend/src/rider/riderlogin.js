@@ -7,10 +7,10 @@ const  Rider_login = ()=>{
         try{
             const body={email,password};
 
-            const response = await fetch("/rider/login",{
-                method:"POST",headers:{"Content-Type":"application/json"},
-                body:JSON.stringify(body)
-            })
+            const response = await fetch(`/rider/login`,{
+            method:"POST",headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(body)}
+            )
             const datainjson = await response.json();
             const did = datainjson.rider._id;
 

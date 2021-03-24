@@ -8,8 +8,7 @@ const driver_schema = new schema({
     password: {type :String,required:true,minlength:8 },
     car_number:{type: String,required:true,unique:true,minlength:10,maxLength:10},
     account: {type: String,required:true,minlength:12,maxLength:12},
-    location: {lat:{type :Number,required:true },lng:{type :Number,required:true }},
-
+    pincode: {type :Number,required:true,minlength:6,maxLength:6}
    /// profile_Pic: {type :String,required:true },
 });
 

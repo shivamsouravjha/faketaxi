@@ -56,6 +56,7 @@ const signup  = async (req,res,next)=>{
 };
 const login  = async (req,res,next)=>{
   const {email,password}=req.body;
+  console.log('dsad');
   let rider_existed;
   try{
     rider_existed = await Rider_Schema.findOne({email:email});
